@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+ 
+  .header {
+    height: 10vh;
+  }
+
+  .login-container {
+    height: 100vh;
+    background-image: url(../public/images/login-library.svg);
+    align-content: center;
+  }
+  .main-container {
+    height: 70vh;
+    margin: 1% 12%;
+    .menu-container {
+      float: left;
+    }
+    .home-container {
+      float: right;
+    }
+  }
+  .footer {
+    // height: 10vh;
+  }
+}
+
+/* Table **/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.user-options{
+  cursor: pointer;
+}
+
+
+/* Left side menu bar **/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.home,
+.reports,
+.products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navbar CSS */
+.navbar {
+  background-color: #ffffff;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  color: #000;
+}
+
+.nav-menu {
+  background-color: #ffffff;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 450ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #151414;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #ffffff;
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  margin-left: 16px;
+}
+
+
