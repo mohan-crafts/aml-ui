@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
-import { IoIosAddCircle } from "react-icons/io";
+import { Component } from 'react';
 
 
-import ViewUsersComponent from './ViewUsersComponent';
-import withNavigate from '../../routing/Navigate.HOC';
 import { Outlet } from 'react-router-dom';
+import withNavigate from '../../routing/Navigate.HOC';
 
 interface Props {
     navigate: any
@@ -17,7 +15,7 @@ class UsersLayoutComponent extends Component<Props, State> {
         super(props);
     }
 
-    // onAddUser = () => {
+    // onAddUser = () => {ßß
     //     this.props.navigate('/main/users/add');
     // }
 

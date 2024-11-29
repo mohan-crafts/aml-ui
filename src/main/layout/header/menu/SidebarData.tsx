@@ -1,11 +1,9 @@
-import React from "react";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import { PiBooksBold } from "react-icons/pi";
-import { GiShoppingBag } from "react-icons/gi";
 import { BiLogOutCircle } from "react-icons/bi";
+import * as FaIcons from "react-icons/fa";
+import { GiShoppingBag } from "react-icons/gi";
+import * as IoIcons from "react-icons/io";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
+import { PiBooksBold } from "react-icons/pi";
 
 export const SidebarData = [
   {
