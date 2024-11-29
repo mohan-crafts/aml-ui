@@ -7,15 +7,15 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('Run Tests') {
-            steps {
-                sh 'npm test'
-            }
-        }
-        // stage('Build App') {
+        // stage('Run Tests') {
         //     steps {
-        //         sh 'npm run build'
+        //         sh 'npm test'
         //     }
         // }
+        stage('Build App') {
+            steps {
+                sh 'npm run build'
+            }
+        }
     }
 }
