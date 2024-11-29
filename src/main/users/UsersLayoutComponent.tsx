@@ -13,19 +13,13 @@ class UsersLayoutComponent extends Component<Props, State> {
 
     constructor(props: any) {
         super(props);
+        this.state = {}
     }
-
-    // onAddUser = () => {ßß
-    //     this.props.navigate('/main/users/add');
-    // }
 
     render() {
         return (
         <div>
             <Outlet></Outlet>
-            {/* <IoIosAddCircle onClick={this.onAddUser} > Add User </IoIosAddCircle> */}
-            {/* <button></button>
-            <ViewUsersComponent></ViewUsersComponent> */}
         </div>
 
         )
