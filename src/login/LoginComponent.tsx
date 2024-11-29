@@ -1,5 +1,4 @@
 import React, { Component } from 'react'; 
-import axios from "axios";
 
 import withNavigate from '../routing/Navigate.HOC';
 import ApiService from '../service/ApiService';
@@ -30,7 +29,7 @@ class LoginComponent extends Component<Props, State> {
     }
 
     private handleInputChange = (event: any) => {
-        const {name, value, type } = event.target;
+        const {name, value } = event.target;
         this.setState({
             credentials: {
                 ...this.state.credentials,

@@ -3,7 +3,6 @@ import { IoIosAddCircle } from "react-icons/io";
 import { MdOutlineModeEditOutline } from "react-icons/md";
 
 import { LuEye } from "react-icons/lu";
-import { Outlet } from "react-router-dom";
 import withNavigate from "../../routing/Navigate.HOC";
 import ApiService from "../../service/ApiService";
 

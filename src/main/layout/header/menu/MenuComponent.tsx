@@ -1,6 +1,6 @@
-import React, { useState, Component } from "react";
-import * as FaIcons from "react-icons/fa";
+import { Component } from "react";
 import * as AiIcons from "react-icons/ai";
+import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData";
 // import "../App.css";

@@ -1,9 +1,8 @@
 import React from "react";
 
-import DashboardComponent from "./dashboard/DashboardComponent";
-import HeaderComponent from "./layout/header/HeaderComponent";
-import FooterComponent from "./layout/footer/FooterComponent";
 import { Outlet } from "react-router-dom";
+import FooterComponent from "./layout/footer/FooterComponent";
+import HeaderComponent from "./layout/header/HeaderComponent";
 
 
 class  LandingPageComponent extends React.Component {

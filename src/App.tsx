@@ -1,15 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, useRoutes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
-import logo from './logo.svg';
 import './App.scss';
-import HeaderComponent from './main/layout/header/HeaderComponent';
-import FooterComponent from './main/layout/footer/FooterComponent';
+
 import LandingPageComponent from './main/LandingPageComponet';
 import LoginComponent from "./login/LoginComponent";
 import DashboardComponent from "./main/dashboard/DashboardComponent";
-import UsersComponent from "./main/users/AddUsersComponent";
 import BooksComponent from "./main/books/BooksComponent";
 import UsersLayoutComponent from "./main/users/UsersLayoutComponent";
 import AddUserComponent from "./main/users/AddUsersComponent";

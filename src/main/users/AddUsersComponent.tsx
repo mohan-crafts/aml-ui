@@ -75,7 +75,7 @@ class AddUserComponent extends Component<Props, State> {
   }
 
   onInputChange = (event: any) => {
-    const {name, value, type, cheked} = event.target;
+    const {name, value} = event.target;
     this.setState({
       userForm: {
         ...this.state.userForm,
