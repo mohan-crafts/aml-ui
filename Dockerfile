@@ -5,13 +5,13 @@ FROM node:latest
 WORKDIR /app
 
 # Copy the package.json and package-lock.json to the working directory
-COPY ./package*.json ./
+COPY package*.json /app
 
 # Install the dependencies
 RUN npm install
 
 # Copy the remaining application files to the working directory
-COPY . .
+COPY . /app
 
 # # Build the application
 # RUN npm run build
