@@ -37,9 +37,9 @@ pipeline {
                     //     dockerImage.push()
                     // }
                     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-cred') {
-                    def customImage = docker.build("my-image:${env.BUILD_ID}")
+                    dockerImage = docker.build("my-image:${env.BUILD_ID}")
                     /* Push the container to the custom Registry */
-                    // customImage.push()
+                    dockerImage.push()
                 }
                 }
             }
