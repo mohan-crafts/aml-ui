@@ -33,7 +33,7 @@ pipeline {
         stage ("Deploy Image") {
             steps {
                 script {
-                    docker.withResgistry('https://registry.hub.docker.com', 'dockerhub-cred') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-cred') {
                         dockerImage.push()
                     }
                     // docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-cred') {
