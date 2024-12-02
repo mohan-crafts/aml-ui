@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {nodejs "NODEJS"}
     environment {
-        imageName = 'aml-mvp/react-app'
+        imageName = 'mohan2114/react-app'
         registryCredentails = 'mohan-2114'
         dockerImage = ''
     }
