@@ -23,24 +23,24 @@ pipeline {
         //     }
         // }
 
-        // stage('Buliding Image') {
-        //     steps {
-        //         script {
-        //             dockerImage = docker.build imageName
-        //         }
-        //     }
-        // }
+        stage('Buliding Image') {
+            steps {
+                script {
+                    dockerImage = docker.build imageName
+                }
+            }
+        }
         stage ("Deploy Image") {
             steps {
                 script {
-                    // docker.withResgistry('https://registry.hub.docker.com', 'dockerhub-cred') {
-                    //     dockerImage.push()
-                    // }
-                    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-cred') {
-                    dockerImage = docker.build("my-image:${env.BUILD_ID}")
-                    /* Push the container to the custom Registry */
-                    dockerImage.push()
-                }
+                    docker.withResgistry('https://registry.hub.docker.com', 'dockerhub-cred') {
+                        dockerImage.push()
+                    }
+                    // docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-cred') {
+                    // dockerImage = docker.build("my-image:${env.BUILD_ID}")
+                    // /* Push the container to the custom Registry */
+                    // dockerImage.push()
+                // }
                 }
             }
         }
